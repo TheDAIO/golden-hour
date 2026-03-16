@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Golden Hour",
+    "slug": "golden-hour",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.goldenhour.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Golden Hour uses your location to calculate accurate sun times for your area."
+      }
+    },
+    "android": {
+      "package": "com.goldenhour.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0F"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "USE_EXACT_ALARM"
+      ]
+    },
+    "plugins": [
+      "expo-notifications",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Golden Hour uses your location to calculate accurate sun times for your area."
+        }
+      ]
+    ],
+    "newArchEnabled": true
+  }
+}
